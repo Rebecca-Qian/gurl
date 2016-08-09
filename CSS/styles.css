@@ -27,19 +27,21 @@ body {
 	background-color: #D8D8D8;
 }
 
-table, th, tr {
-	padding: 0;
-}
-
 h1 a {
 	font-family: 'Alegreya Sans SC', sans-serif;
 	color: red;
+	font-size: 60px;
 }
 
-h2, h3, h4, h5 {
+h2, h3, h4, h5, h6 {
 	font-family: 'Alegreya Sans SC', sans-serif;
-	font-size: 40px;
+	font-size: 60px;
 	padding-bottom: 25px;
+}
+
+.row {
+	font-size: 25px;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 h2 {
@@ -58,10 +60,6 @@ h4 {
 	color: blue;
 }
 
-.desires a:hover {
-	text-decoration-color: blue;
-}
-
 h5 {
 	color: yellow;
 }
@@ -72,16 +70,17 @@ h6 {
 
 .github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}
 
+
 @keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}
 
 @media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}
 
-.row {
-	font-family: 'Josefin Sans', sans-serif;
+th {
+	padding-left: 10%;
 }
 
-/*prompt1 {
-	color: #FFB828;
+/*table {
+	padding-top: 25px;
 }*/
 
 .checkbox {
@@ -97,7 +96,10 @@ h6 {
 #pdfbutton {
 	text-align: center;
 	font-family: 'Alegreya Sans SC', sans-serif;
-	font-size: 20px;
+	font-size: 15px;
+	color: black;
+	border-style: dotted;
+	border-color: yellow;
 }
 
 /** Bouncing Arrow Properties Thanks https://codepen.io/designer_guru/pen/JhyeH **/
