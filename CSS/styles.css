@@ -2,6 +2,27 @@
 	height: 200px;
 }
 
+a:link {
+	color: black;
+	text-decoration: none;
+}
+
+a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: black;
+	/*text-decoration: none;*/
+}
+
+a:active {
+	color: black;
+	text-decoration: none;
+}
+
+
 body {
 	background-color: #D8D8D8;
 }
@@ -25,12 +46,20 @@ h2 {
 	color: orange;
 }
 
+.school a:hover {
+	text-decoration-color: orange;
+}
+
 h3 {
 	color: purple;
 }
 
 h4 {
 	color: blue;
+}
+
+.desires a:hover {
+	text-decoration-color: blue;
 }
 
 h5 {
@@ -62,6 +91,12 @@ h6 {
 #art, #science, #music, #math, #sports, #games, #fashion, #travel, #food {
 	display: block;
 	text-align: center;
+	font-size: 20px;
+}
+
+#pdfbutton {
+	text-align: center;
+	font-family: 'Alegreya Sans SC', sans-serif;
 	font-size: 20px;
 }
 
