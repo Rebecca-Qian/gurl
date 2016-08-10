@@ -84,7 +84,8 @@ th {
 }*/
 
 .checkbox {
-	height: 200px;
+	height: 150px;
+	margin-top: 0px;
 }
 
 #art, #science, #music, #math, #sports, #games, #fashion, #travel, #food {
