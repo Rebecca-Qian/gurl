@@ -5,6 +5,7 @@
 
 // array of filtered resources
 var result = [];
+var companyList = [];
 
 // Resource object constructor
 function Resource(name, Url, difficulty) {
@@ -18,6 +19,52 @@ var resources = [ new Resource('Codeacademy', 'https://www.codecademy.com/', 3),
 new Resource('Coursera', 'https://www.coursera.com', 4), 
 new Resource('Khanacademy', 'https://khanacademy.com', 2)];
 
+// Company object constructor
+function Company(name, Url, category, summary) {
+	this.name = name;
+	this.Url = Url;
+	this.category = category;
+	this.summary = summary;
+}
+
+// full list of companies
+var companies = [new Company('Fitbit', 'www.fitbit.com', 'Sports', 'makes tracking devices that record your heartrate, steps taken etc.'),
+new Company('Airbnb', 'www.airbnb.com', 'Travel', 'lets people host guests in their houses and apartments'),
+new Company('Rent the Runway', 'www.renttherunway.com', 'Fashion', 'lets users rent designer dresses for a fraction of the cost'),
+new Company('Spotify', 'www.spotify.com', 'Music', 'hosts a large music library and charges users a small fee every month'),
+new Company('Doordash', 'www.doordash.com', 'Food', 'delivers food to consumers from a wide range of restaurants'),
+new Company('Pinterest', 'www.pinterest.com', 'Art', 'shows pins ranging from fashion trends to photography')];
+
+// sorts user interest
+function sortInterest (categories) {
+	for (var j = 0; j < categories.length; j++) {
+		for (var i = 0; i < companies.length; i++) {
+			if (categories[j] == companies[i].category) {
+				companyList.push(companies[i]);
+			}
+		}
+	}
+	return companyList;
+}
+
+function getInterest() {
+	var interests = [];
+	function sortArt() {
+		interests.push('Art');
+	}
+	function sortSports() {
+		interests.push('Sports');
+	}
+	function sortTravel() {
+		interests.push('Travel');
+	}
+
+	document.getElementById('chooseArt').addEventListener("click", sortArt);
+	document.getElementById('chooseSports').addEventListener("click", sortSports);
+	document.getElementById('chooseTravel').addEventListener("click", sortTravel);
+
+	return sortInterest(interests);
+};
 // function takes in user selections
 // pushes to arrays of links
 function sortLevel (level) {
