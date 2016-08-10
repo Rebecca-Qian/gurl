@@ -35,6 +35,32 @@ function sortLevel (level) {
 	return result;
 }
 
+(function getLevel() {
+	function sortMS() {
+		return sortLevel('middleSchool');
+	}
+	function sortHS() {
+		return sortLevel('highSchool');
+	}
+	function sortCollege() {
+		return sortLevel('college');
+	}
+	document.getElementById("chooseMS").addEventListener("click", sortMS);
+	document.getElementById("chooseHS").addEventListener("click", sortHS);
+	document.getElementById("chooseCollege").addEventListener("click", sortCollege);
+
+})();
+
+(function showResults() {
+	function sortResults() {
+		for (var i = 0; i < result.length; i++) {
+			document.getElementById("grandResults").innerHTML += result[i].name + ": " + result[i].Url + " <br />";
+		}
+	}
+
+	document.getElementById("finalPrompt").addEventListener("click", sortResults);
+})();
+
 // function resourceList(age, subject, goal, style){
 
 // }

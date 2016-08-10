@@ -74,15 +74,15 @@ Try it Yourself »
                 <div id="eduLevel" class="row">
                     <div id="middleSchool" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox">
                         <label>
-                            <input type="radio">Middle School Student</label>
+                            <input id="chooseMS" type="radio">Middle School Student</label>
                     </div>
                     <div id="highSchool" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox">
                         <label>
-                            <input type="radio">High School Student</label>
+                            <input id="chooseHS" type="radio">High School Student</label>
                     </div>
                     <div id="college" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox">
                         <label>
-                            <input type="radio">College Student</label>
+                            <input id="chooseCollege" type="radio">College Student</label>
                     </div>
                 </div>
             </div>
@@ -194,8 +194,12 @@ Try it Yourself »
             <h5 class="text-center">Here are the Grand Results...</h2>
         </div>
 
-        <div class="row">
-            Yippee!
+        <div id="finalPrompt" class="row text-center">
+          <button type="button" class="btn btn-info"> Show my results!</button>
+        </div>
+
+        <div id="grandResults" class="row">
+            
         </div>
 
         <div class = "col-md-4 text-center"><a href="javascript:demoFromHTML()" class="button" id = "pdfbutton">Download as PDF</a></div>
@@ -211,7 +215,7 @@ Try it Yourself »
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="JS/jsPDF-1.2.60/dist/jspdf.min.js"></script>
-    <script src="js/functions.js"></script>
+    <script src="js/resource_selection.js"></script>
     <script type="text/javascript" src="JS/fullPage.js-master/jquery.fullPage.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
