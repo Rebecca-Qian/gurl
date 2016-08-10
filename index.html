@@ -71,20 +71,24 @@ Try it Yourself »
                 <div class="title">
                     <h2 id="prompt1" class="text-center">I am a...</h2>
                 </div>
-                <div id="eduLevel" class="row">
-                    <div id="middleSchool" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox">
-                        <label>
-                            <input id="chooseMS" type="radio">Middle School Student</label>
-                    </div>
-                    <div id="highSchool" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox">
-                        <label>
-                            <input id="chooseHS" type="radio">High School Student</label>
-                    </div>
-                    <div id="college" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox">
-                        <label>
-                            <input id="chooseCollege" type="radio">College Student</label>
-                    </div>
-                </div>
+                <form role = "form">
+                  <div id="eduLevel" class="row">
+                      <div id="middleSchool" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center radio">
+                          <label class="radio-inline">
+                              <input id="chooseMS" name="optradio" type = "radio">Middle School Student
+                          </label>
+                      </div>
+                      <div id="highSchool" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center radio">
+                          <label class = "radio-inline">
+                              <input id="chooseHS" name="optradio" type="radio">High School Student
+                            </label>
+                      </div>
+                      <div id="college" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center radio">
+                          <label class = "radio-inline">
+                              <input id="chooseCollege" name="optradio" type="radio">College Student</label>
+                      </div>
+                  </div>
+                </form>
             </div>
 
         </div>
@@ -153,10 +157,10 @@ Try it Yourself »
           </div>
 
           <div class="row">
-              <div class="col-md-3 text-center checkbox"><label><input type="radio">Learn about starting a company</label></div>
-              <div class="col-md-3 text-center checkbox"><label><input type="radio">Learn about coding</label></div>
-              <div class="col-md-3 text-center checkbox"><label><input type="radio">Learn about computers</label></div>
-              <div class="col-md-3 text-center checkbox"><label><input type="radio">Learn about engineering</label></div>
+              <div class="col-md-3 text-center checkbox"><label><input type="radio" name = "optradio">Learn about starting a company</label></div>
+              <div class="col-md-3 text-center checkbox"><label><input type="radio" name = "optradio">Learn about coding</label></div>
+              <div class="col-md-3 text-center checkbox"><label><input type="radio" name = "optradio">Learn about computers</label></div>
+              <div class="col-md-3 text-center checkbox"><label><input type="radio" name = "optradio">Learn about engineering</label></div>
           </div>
 
         </div>
@@ -181,7 +185,7 @@ Try it Yourself »
               <div class="col-md-4 text-center checkbox"><label><input type="checkbox">In a Classroom</label></div>
               <div class="col-md-4 text-center checkbox"><label><input type="checkbox"><i class="fa fa-file-audio-o"></i>Through Podcasts</label></div>
           </div>
-          
+
         </div>
 
       </div>
@@ -199,7 +203,7 @@ Try it Yourself »
         </div>
 
         <div id="grandResults" class="row">
-            
+
         </div>
 
         <div class = "col-md-4 text-center"><a href="javascript:demoFromHTML()" class="button" id = "pdfbutton">Download as PDF</a></div>
