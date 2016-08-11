@@ -6,6 +6,8 @@
 // array of filtered resources
 var result = [];
 var companyList = [];
+var interestList = [];
+var categories = [];
 
 // Resource object constructor
 function Resource(name, Url, difficulty) {
@@ -35,6 +37,30 @@ new Company('Spotify', 'www.spotify.com', 'Music', 'hosts a large music library 
 new Company('Doordash', 'www.doordash.com', 'Food', 'delivers food to consumers from a wide range of restaurants'),
 new Company('Pinterest', 'www.pinterest.com', 'Art', 'shows pins ranging from fashion trends to photography')];
 
+(function getInterest() {
+	function sortArt() {
+		interestList.push('Art');
+		//console.log('hello');
+	}
+	function sortSports() {
+		interestList.push('Sports');
+		//console.log(interestList);
+	}
+	function sortTravel() {
+		interestList.push('Travel');
+		//console.log(interestList);
+	}
+
+	//interestList.push('Travel');
+
+	 document.getElementById('chooseArt').addEventListener("click", sortArt);
+	document.getElementById('chooseSports').addEventListener("click", sortSports);
+	 document.getElementById('chooseTravel').addEventListener("click", sortTravel);
+
+	//array of user interests
+	return interestList;
+})();
+
 // sorts user interest
 function sortInterest (categories) {
 	for (var j = 0; j < categories.length; j++) {
@@ -47,24 +73,19 @@ function sortInterest (categories) {
 	return companyList;
 }
 
-function getInterest() {
-	var interests = [];
-	function sortArt() {
-		interests.push('Art');
+(function showInterest() {
+	
+	 function sortInterests() {
+	 	document.getElementById("grandResults").innerHTML = companyList[0].name;
 	}
-	function sortSports() {
-		interests.push('Sports');
-	}
-	function sortTravel() {
-		interests.push('Travel');
-	}
+	// 	for (var i = 0; i < companyList.length; i++) {
+	// 		document.getElementById("grandResults").innerHTML += companyList[i].name + ": " + companyList[i].Url + " <br />";
+	// 	}
+	// }
 
-	document.getElementById('chooseArt').addEventListener("click", sortArt);
-	document.getElementById('chooseSports').addEventListener("click", sortSports);
-	document.getElementById('chooseTravel').addEventListener("click", sortTravel);
+	 document.getElementById("finalPrompt").addEventListener("click", sortInterests);
+})();
 
-	return sortInterest(interests);
-};
 // function takes in user selections
 // pushes to arrays of links
 function sortLevel (level) {
@@ -107,6 +128,12 @@ function sortLevel (level) {
 
 	document.getElementById("finalPrompt").addEventListener("click", sortResults);
 })();
+
+// function testfn() {
+// 	return interestList.push('Travel');
+// }
+
+// document.getElementById("chooseTravel").addEventListener("click", testfn);
 
 // function resourceList(age, subject, goal, style){
 
