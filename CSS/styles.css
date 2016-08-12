@@ -1,5 +1,10 @@
+@font-face {
+  font-family: Affogato;
+  src: Affogato-Black.ttf;
+}
+
 body {
-    background-color: #fff;
+    background-color: white;
 }
 
 li {
@@ -30,9 +35,14 @@ h1, h5 {
     font-family: 'Josefin Sans', sans-serif;
 }
 
+.level, .desires {
+  font-weight: bold !important;
+}
+
 .arrow {
 	text-align: center;
-	bottom: 20px;
+  padding-top: 20px;
+	padding-left: 50%;
 }
 
 .social-media a:link {
@@ -64,12 +74,16 @@ th {
 }
 
 .radio {
-	padding-bottom: 50px;
-
+	margin-bottom: 50px;
+  padding: 15px;
+  background-color: black !important;
+  height: 100%;
+  width: 30%;
+  color: white;
 }
 
 .checkbox {
-	padding-bottom: 50px;
+	margin-bottom: 50px;
 }
 
 input[type=checkbox] {
@@ -104,8 +118,8 @@ input[type=radio] {
 	color: #D81E5B;
 }
 
-.one-choice {
-  border-style: dashed;
+#middleSchool, #highSchool, #college {
+  background-size: 60px 60px;
 }
 
 #art, #science, #music, #math, #sports, #games, #fashion, #travel, #food {
