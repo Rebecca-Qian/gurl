@@ -40,18 +40,13 @@ new Company('Pinterest', 'www.pinterest.com', 'Art', 'shows pins ranging from fa
 (function getInterest() {
 	function sortArt() {
 		interestList.push('Art');
-		//console.log('hello');
 	}
 	function sortSports() {
 		interestList.push('Sports');
-		//console.log(interestList);
 	}
 	function sortTravel() {
 		interestList.push('Travel');
-		//console.log(interestList);
 	}
-
-	//interestList.push('Travel');
 
 	 document.getElementById('chooseArt').addEventListener("click", sortArt);
 	document.getElementById('chooseSports').addEventListener("click", sortSports);
@@ -71,20 +66,23 @@ function sortInterest (categories) {
 		}
 	}
 	return companyList;
-}
+};
 
 (function showInterest() {
-	
-	 function sortInterests() {
-	 	document.getElementById("grandResults").innerHTML = companyList[0].name;
-	}
-	// 	for (var i = 0; i < companyList.length; i++) {
-	// 		document.getElementById("grandResults").innerHTML += companyList[i].name + ": " + companyList[i].Url + " <br />";
-	// 	}
-	// }
+	  function sortInterests() {
 
-	 document.getElementById("finalPrompt").addEventListener("click", sortInterests);
-})();
+	  	(function() {
+	  		return sortInterest(interestList);
+	  	})();
+
+	  	for (var i = 0; i < companyList.length; i++) {
+	 	
+	 	document.getElementById("grandResults").innerHTML += companyList[i].name + ": " + companyList[i].summary + "<br />";
+	 }
+	}
+document.getElementById("finalPrompt").addEventListener("click", sortInterests);
+}
+)();
 
 // function takes in user selections
 // pushes to arrays of links
@@ -128,13 +126,3 @@ function sortLevel (level) {
 
 	document.getElementById("finalPrompt").addEventListener("click", sortResults);
 })();
-
-// function testfn() {
-// 	return interestList.push('Travel');
-// }
-
-// document.getElementById("chooseTravel").addEventListener("click", testfn);
-
-// function resourceList(age, subject, goal, style){
-
-// }
