@@ -10,16 +10,19 @@ var interestList = [];
 var categories = [];
 
 // Resource object constructor
-function Resource(name, Url, difficulty) {
+function Resource(name, Url, difficulty, learningStyle) {
 	this.name = name;
 	this.Url = Url;
 	this.level = difficulty;
+	this.learningStyle = learningStyle;
 }
 
 // full list of resources
-var resources = [ new Resource('Codeacademy', 'https://www.codecademy.com/', 3),
-new Resource('Coursera', 'https://www.coursera.com', 4), 
-new Resource('Khanacademy', 'https://khanacademy.com', 2)];
+var resources = [ new Resource('Codeacademy', 'https://www.codecademy.com/', 3, ['Reading']),
+new Resource('Coursera', 'https://www.coursera.com', 4, ['Video', 'Friends']),
+new Resource('VideoResource', 'https://www.coursera.com', 3, ['Video', 'Friends']),
+new Resource('RandomResource', 'https://www.video.com', 3, ['Video', 'Friends']), 
+new Resource('Khanacademy', 'https://khanacademy.com', 2, ['Video', 'Games'])];
 
 // Company object constructor
 function Company(name, Url, category, summary) {
@@ -141,17 +144,17 @@ document.getElementById("finalPrompt").addEventListener("click", sortInterests);
 // function takes in user selections
 // pushes to arrays of links
 function sortLevel (level) {
+	result = [];
 	for (var i = 0; i < resources.length; i++) {
 		if (level == 'middleSchool' && resources[i].level == 2) {
-			result = [];
+			//result = [];
 			result.push(resources[i]);
 		}
 		if (level == 'highSchool' && resources[i].level == 3) {
-			result = [];
 			result.push(resources[i]);
 		}
 		if (level == 'college' && resources[i].level == 4) {
-			result = [];
+			//result = [];
 			result.push(resources[i]);
 		}
 	}
@@ -159,36 +162,63 @@ function sortLevel (level) {
 }
 
 (function getLevel() {
+	result = [];
 	function sortMS() {
-		result = [];
 		return sortLevel('middleSchool');
 	}
 	function sortHS() {
-		result = [];
+		//result = [];
 		return sortLevel('highSchool');
 	}
 	function sortCollege() {
-		result = [];
+		//result = [];
 		return sortLevel('college');
 	}
 	document.getElementById("chooseMS").addEventListener("click", sortMS);
 	document.getElementById("chooseHS").addEventListener("click", sortHS);
 	document.getElementById("chooseCollege").addEventListener("click", sortCollege);
 
-	result = [];
+	//result = [];
 
 })();
 
 (function showResults() {
 	function sortResults() {
+		document.getElementById("grandResults1").innerHTML = "";
 		for (var i = 0; i < result.length; i++) {
-			document.getElementById("grandResults1").innerHTML = result[i].name + ": " + result[i].Url + " <br />";
+			document.getElementById("grandResults1").innerHTML += result[i].name + ": " + result[i].Url + " <br />";
 		}
 	}
 
 	document.getElementById("finalPrompt").addEventListener("click", sortResults);
 	result = [];
 })();
+
+// (function getLearningStyle() {
+// 	function sortVideo() {
+// 		for (var i = 0; i < result.length; i++) {
+// 			for (var j = 0; j < result[i].learningStyle.length; j++) {
+// 				if (result[i].learningStyle[j] != 'Video') {
+// 					result[i] = '';
+// 				}
+// 			}
+// 		}
+// 		return result;
+// 	}
+// 	function sortReading() {
+// 		return;
+// 	}
+// 	function sortFriends() {
+// 		return;
+// 	}
+// 	function sortGames() {
+// 		return;
+// 	}
+// 	document.getElementById("chooseVideo").addEventListener("click", sortVideo);
+// 	document.getElementById("chooseReading").addEventListener("click", sortReading);
+// 	document.getElementById("chooseFriends").addEventListener("click", sortFriends);
+// 	document.getElementById("chooseGames").addEventListener("click", sortGames);
+// })
 
 // function testfn() {
 // 	return interestList.push('Travel');
