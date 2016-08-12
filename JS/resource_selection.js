@@ -74,14 +74,14 @@ function sortInterest (categories) {
 }
 
 (function showInterest() {
-	
-	 function sortInterests() {
-	 	document.getElementById("grandResults").innerHTML = companyList[0].name;
-	}
-	// 	for (var i = 0; i < companyList.length; i++) {
-	// 		document.getElementById("grandResults").innerHTML += companyList[i].name + ": " + companyList[i].Url + " <br />";
-	// 	}
+	// sortInterest(interestList);
+	  function sortInterests() {
+	//  	document.getElementById("grandResults").innerHTML += companyList[0].name + ': ' + myList.summary + '<br />';
 	// }
+		for (var i = 0; i < sortInterest(interestList).length; i++) {
+			document.getElementById("grandResults").innerHTML += sortInterest(interestList)[i].name + ': ' + sortInterest(interestList)[i].summary + ' <br />';
+		}
+	}
 
 	 document.getElementById("finalPrompt").addEventListener("click", sortInterests);
 })();
