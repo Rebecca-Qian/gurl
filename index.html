@@ -56,19 +56,6 @@
                     <!-- <ul id= -->
                 </div>
 
-                <div class="radio-toolbar">
-
-            <input type="radio" id="radio1" name="radios" value="all" checked>
-            <label for="radio1">All</label>
-
-            <input type="radio" id="radio2" name="radios"value="false">
-            <label for="radio2">Open</label>
-
-            <input type="radio" id="radio3" name="radios" value="true">
-            <label for="radio3">Archived</label>
-
-        </div>
-
 
             <div class="arrow hvr-sink">
               <!-- <a href = #school> -->
@@ -78,14 +65,14 @@
 
         </div>
 
-        <div class="section" id = "school">
+        <div class="section" id = "levl">
                 <div class="container-fluid school">
                     <div class="title">
                         <h2 id="prompt1" class="text-center">I am a...</h2>
                     </div>
                     <div class = "radio-toolbar">
-                        <div id="eduLevel" class="row">
-                            <div id="middleSchool" class="col-xs-12 col-s-12 col-md-12 col-lg-12 text-center radio hvr-radial-out">
+                        <div id="levl" class="row">
+                            <div id="middleSchool" class="col-xs-12 col-s-12 col-md-12 col-lg-12 text-center radio hvr-radial-out onechoice">
                                     <input id="chooseMS" name="radios" type="radio"><label for="chooseMS">Middle School Student
                                     </label>
                             </div>
@@ -94,8 +81,7 @@
                                     </label>
                             </div>
                             <div id="college" class="col-xs-12 col-s-12 col-md-12 col-lg-12 text-center radio hvr-radial-out">
-                                <label>
-                                    <input id="chooseCollege" name="radios" type="radio">College Student
+                                    <input id="chooseCollege" name="radios" type="radio"><label for = "chooseCollege">College Student
                                 </label>
                             </div>
                         </div>
@@ -119,46 +105,46 @@
                         <h3 id="prompt2" class="text-center">I like...</h2>
             </div>
 
-            <div id="selectInterest" class="row">
-                <div id="art" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox hvr-radial-in">
-                    <label>
-                        <input id="chooseArt" type="checkbox" value = "chooseArt"><i class="fa fa-paint-brush fa-5x"></i> Art</label>
-                </div>
-                <div id="science" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox hvr-radial-in">
-                    <label>
-                        <input id="chooseScience" type="checkbox"><i class="fa fa-flask fa-5x"></i>Science</label>
-                </div>
-                <div id="music" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox hvr-radial-in">
-                    <label>
-                        <input id = "chooseMusic" type="checkbox"><i class="fa fa-music fa-5x"></i>Music</label>
-                </div>
+            <div id="selectInterest" class="row checkbox-toolbar">
+                  <div id = "art" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox hvr-radial-in">
+                      <input type="checkbox" id = "chooseArt" value = "chooseArt">
+                      <label for = "chooseArt"><i class="fa fa-paint-brush fa-5x"></i>Art</label>
+                  </div>
+                  <div id = "science" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox hvr-radial-in">
+                      <input type="checkbox" id = "chooseScience" value = "chooseScience">
+                      <label for = "chooseScience"><i class="fa fa-flask fa-5x"></i>Science</label>
+                  </div>
+                 <div id = "music" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox hvr-radial-in">
+                      <input type="checkbox" id = "chooseMusic" value = "chooseMusic">
+                      <label for = "chooseMusic"><i class="fa fa-music fa-5x"></i>Music</label>
+                  </div>
             </div>
-            <div class="row">
-                <div id="math" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox hvr-radial-in">
-                    <label>
-                        <input id = "chooseMath" type="checkbox"><i class="fa fa-calculator fa-5x"></i>Math</label>
-                </div>
-                <div id="sports" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox hvr-radial-in">
-                    <label>
-                        <input id="chooseSports" type="checkbox"><i class="fa fa-futbol-o fa-5x"></i>Sports</label>
-                </div>
-                <div id="games" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox hvr-radial-in">
-                    <label>
-                        <input id ="chooseGames" type="checkbox"><i class="fa fa-gamepad fa-5x"></i>Games</label>
-                </div>
+            <div class="row checkbox-toolbar">
+              <div id = "math" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox hvr-radial-in">
+                  <input type="checkbox" id = "chooseMath" value = "chooseMath">
+                  <label for = "chooseMath"><i class="fa fa-calculator fa-5x"></i>Math</label>
+              </div>
+              <div id = "sports" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox hvr-radial-in">
+                  <input type="checkbox" id = "chooseSports" value = "chooseSports">
+                  <label for = "chooseSports"><i class="fa fa-futbol-o  fa-5x"></i>Sports</label>
+              </div>
+              <div id = "games" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox hvr-radial-in">
+                  <input type="checkbox" id = "chooseGames" value = "chooseGames">
+                  <label for = "chooseGames"><i class="fa fa-gamepad fa-5x"></i>Games</label>
+              </div>
             </div>
-            <div class="row">
+            <div class="row checkbox-toolbar">
                 <div id="fashion" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox hvr-radial-in">
-                    <label>
-                        <input type="checkbox"><i class="fa fa-shopping-bag fa-5x"></i>Fashion</label>
+                  <input type="checkbox" id = "chooseFashion" value = "chooseFashion">
+                  <label for = "chooseFashion"><i class="fa fa-shopping-bag fa-5x"></i>Fashion</label>
                 </div>
                 <div id="travel" class="col-xs-4 col-s-4 col-md-4 col-lg-4text-center checkbox hvr-radial-in">
-                    <label>
-                        <input id="chooseTravel" type="checkbox"><i class="fa fa-suitcase fa-5x"></i>Travel</label>
+                  <input type="checkbox" id = "chooseTravel" value = "chooseTravel">
+                  <label for = "chooseTravel"><i class="fa fa-suitcase fa-5x"></i>Travel</label>
                 </div>
                 <div id="food" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox hvr-radial-in">
-                    <label>
-                        <input type="checkbox"><i class="fa fa-cutlery fa-5x"></i>Food</label>
+                  <input type="checkbox" id = "chooseFood" value = "chooseFood">
+                  <label for = "chooseFood"><i class="fa fa-cutlery fa-5x"></i>Food</label>
                 </div>
             </div>
 
@@ -178,9 +164,14 @@
               <h2 class="text-center">I want to...</h2>
           </div>
 
-          <div class="row">
-              <div class="col-xs-12 col-s-12 col-md-12 col-lg-12 text-center radio hvr-rectangle-in"><label><input type="radio" name = "optradio">Learn about starting a company</label></div>
-              <div class="col-xs-12 col-s-12 col-md-12 col-lg-12 text-center radio"><label><input type="radio" name = "optradio">Learn about coding</label></div>
+          <div class="row radio-toolbar2">
+              <div class="col-xs-12 col-s-12 col-md-12 col-lg-12 text-center radio hvr-rectangle-in">
+                <input type="radio" id = "startCompany" name = "radios"><label for = "startCompany">Learn about starting a company
+                </label>
+              </div>
+              <div class="col-xs-12 col-s-12 col-md-12 col-lg-12 text-center radio"><input type="radio" id = "learnCoding" name = "radios">
+                <label for = "learnCoding">Learn about coding</label>
+              </div>
           </div>
 
           <div class="arrow">
@@ -198,14 +189,28 @@
               <h2 class="text-center">I like learning...</h2>
           </div>
 
-          <div class="row">
-              <div class="col-xs-6 col-s-6 col-md-6 col-lg-6 text-center checkbox hvr-rectangle-out"><label><input type="checkbox"><i class="fa fa-camera-retro fa-5x"></i> Through Videos</label></div>
-              <div class="col-xs-6 col-s-6 col-md-6 col-lg-6 text-center checkbox hvr-rectangle-out"><label><input type="checkbox"><i class="fa fa-gamepad fa-5x"></i>Through Games</label></div>
+          <div class="row checkbox-toolbar2">
+              <div class="col-xs-6 col-s-6 col-md-6 col-lg-6 text-center checkbox hvr-rectangle-out">
+                  <input type="checkbox" id = "videos">
+                  <label for = "videos"><i class="fa fa-camera-retro fa-5x"></i> Through Videos</label>
+              </div>
+              <div class="col-xs-6 col-s-6 col-md-6 col-lg-6 text-center checkbox hvr-rectangle-out">
+                  <input type="checkbox" id = "gaming">
+                  <label for = "gaming"><i class="fa fa-gamepad fa-5x"></i> Through Games</label>
+              </div>
           </div>
 
-          <div class="row">
-            <div class="col-xs-6 col-s-6 col-md-6 col-lg-6 text-center checkbox hvr-rectangle-out"><label><input type="checkbox"><i class="fa fa-book fa-5x"></i>Through Reading</label></div>
-            <div class="col-xs-6 col-s-6 col-md-6 col-lg-6 text-center checkbox hvr-rectangle-out"><label><input type="checkbox"><i class="fa fa-venus-double fa-5x"></i>With friends</label></div>
+          <div class="row checkbox-toolbar2">
+            <div class="col-xs-6 col-s-6 col-md-6 col-lg-6 text-center checkbox hvr-rectangle-out">
+              <input type="checkbox" id = "reading">
+              <label for = "reading">
+                <i class="fa fa-book fa-5x"></i>Through Reading</label></div>
+            <div class="col-xs-6 col-s-6 col-md-6 col-lg-6 text-center checkbox hvr-rectangle-out">
+              <input type="checkbox" id = "friends">
+              <label for = "friends">
+                <i class="fa fa-venus-double fa-5x"></i>With friends
+              </label>
+              </div>
           </div>
 
 
@@ -230,21 +235,37 @@
           <button type="button" class="btn btn-info"> Show my results!</button>
         </div>
 
-        <div id = "roleModels" class = "col-xs-4 col-s-4 col-md-4 col-lg-4 text-center text-center row">
-          Role Models
-        </div>
+
+        <div id="grandResults">
+
+          <div id = "roleModels" class = "col-xs-4 col-s-4 col-md-4 col-lg-4 row">
+          <div class = "header">
+            Role Models
+          </div>
+          <div class = "thing">
+            Person
+          </div>
+          <div class = "description">
+            Lorem ipsum love you!
+          </div>
+          </div>
 
 
-        <div id = "resources" class = "col-xs-4 col-s-4 col-md-4 col-lg-4 text-center text-center row">
-        Resources
-        </div>
+          <div id = "resources" class = "col-xs-4 col-s-4 col-md-4 col-lg-4 row">
+          <div class = "header">
+            Resources
+          </div>
+          <div class = "thing">
+            Resource
+          </div>
+          <div class = "description">
+            Lorem ipsum love you!
+          </div>
+          </div>
 
-        <div id = "companies" class = "col-xs-4 col-s-4 col-md-4 col-lg-4 text-center text-center row">
-        Companies
-        </div>
-
-
-        <div id="grandResults" class = "col-xs-4 col-s-4 col-md-4 col-lg-4 text-center text-center row">
+          <div id = "companies" class = "col-xs-4 col-s-4 col-md-4 col-lg-4 row">
+          Companies
+          </div>
 
         </div>
 

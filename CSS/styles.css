@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 		color: black;
 }
 
-h1 {
+h1, h5 {
 	color: #B81365 !important;
 }
 
@@ -84,27 +84,46 @@ input[type=radio] {
     display:none;
 }
 
-.radio-toolbar label {
-    display:inline-block;
-    background-color:#D8D8D8;
-    /*padding:4px 11px;
-    font-family:Arial;
-    font-size:16px;*/
-}
-
 .radio-toolbar input[type="radio"]:checked + label {
-    color:#86b3c1;
+    color:#883677;
 }
 
-input[type=checkbox]:checked {
-	color: white;
-	background: #86b3c1;
+.radio-toolbar2 input[type="radio"] {
+    display:none;
+}
+
+.radio-toolbar2 input[type="radio"]:checked + label {
+    color:#6200B3;
+}
+
+.checkbox-toolbar input[type=checkbox]:checked +label {
+	color: #6534ff;
+}
+
+.checkbox-toolbar2 input[type=checkbox]:checked +label {
+	color: #D81E5B;
+}
+
+.one-choice {
+  border-style: dashed;
 }
 
 #art, #science, #music, #math, #sports, #games, #fashion, #travel, #food {
     display: block;
     text-align: center;
     font-size: 20px;
+}
+
+
+.header {
+  color: yellow;
+  font-size: 50px;
+  padding-bottom: 15px;
+}
+
+.thing {
+  font-family: 'Alegreya Sans SC', sans-serif !important;
+  font-size: 30px;
 }
 
 #pdfbutton {
