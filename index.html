@@ -11,7 +11,9 @@
     <!-- Bootstrap -->
     <link href="CSS/bootstrap.min.css" rel="stylesheet">
     <link href="CSS/styles.css" rel="stylesheet">
+    <link href="CSS/Hover/css/hover-min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,500,700,700italic,400italic|Josefin+Sans:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Dancing+Script&effect=anaglyph' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="CSS/font-awesome-4.6.3/css/font-awesome.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -23,129 +25,153 @@
 </head>
 
 <body>
+  <ul id="menu navbar-fixed">
+    <li data-menuanchor="1"><a href="#school"><i class="fa fa-circle-thin"></i>Education Level</a></li>
+    <li data-menuanchor="2"><a href="#likes"><i class="fa fa-circle-thin"></i>Likes</a></li>
+
+    <li data-menuanchor="3"><a href="#desires"><i class="fa fa-circle-thin"></i>Desires</a></li>
+    <li data-menuanchor="4"><a href="#learning-style"><i class="fa fa-circle-thin"></i>Learning Style</a></li>
+    <li data-menuanchor="5"><a href="#results"><i class="fa fa-circle-thin"></i>Results</a></li>
+</ul>
+
     <div id="fullpage">
-        <div class="section">
-            <h1 id="challengeTitle" class="col-xs-12 col-s-12 col-md-12 col-lg-12 text-center"><a href="index.html">Girls Who Code Challenge</a></h1>
 
-            <!--Shoutout to http://tholman.com/github-corners/  -->
-            <a href="https://github.com/chooseyourownresources-girlswhocode/chooseyourownresources-girlswhocode.github.io" class="github-corner" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:red; color:#fff; position: absolute; top: 0; border: 0; right: 0;">
-              <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-              <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-              <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
-            </svg></a>
+        <div class="section" id = "intro">
+                <h1 id="challengeTitle" class="col-xs-12 col-s-12 col-md-12 col-lg-12 text-center font-effect-3">4 Questions to Code</h1>
 
-            <div class="col-xs-12 col-s-12 col-md-12 col-lg-12 text-center row">Welcome! We hope this tool will be useful for you in pursuing computer science. Proceed with answering the following questions below to get your customized resource sheet. Please share with your friends and most importantly, have fun!
-            </div>
+                <div class="col-xs-12 col-s-12 col-md-12 col-lg-12 text-center row intro">Welcome! We hope this tool will be useful for you in pursuing computer science. Proceed with answering the following questions below to get your customized resource sheet. Please share with your friends and most importantly, have fun!
+                </div>
 
-            <div class="social-media text-center">
-              <table align = "center">
-                  <tr>
-                    <th><a href=#><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></a></div></th>
-                    <th><a href=#><i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i></a></th>
-                    <th><a href=#><i class="fa fa-envelope-o fa-4x" aria-hidden="true"></i></a></th>
-                  </tr>
-                </table>
-            </div>
-                <!-- <div class="fb"><a href=#><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></a></div>
-                <div class="twitter"><a href=#><i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i></a></div>
-                <div class="email"><a href=#><i class="fa fa-envelope-o fa-4x" aria-hidden="true"></i></a></div>
-            </div> -->
+                <div class="social-media text-center">
+                    <table align="center">
+                        <tr>
+                            <th><a href=# class="hvr-buzz-out"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></a>
+                            </th>
+                            <th><a href=# class="hvr-buzz-out"><i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i></a></th>
+                            <th><a href=# class="hvr-buzz-out"><i class="fa fa-envelope-o fa-4x" aria-hidden="true"></i></a></th>
+                            <th><a href=# class="hvr-buzz-out"><i class="fa fa-github fa-4x" aria-hidden="true"></a></th>
+                        </tr>
+                    </table>
 
-            <div class="arrow animated bounce">
-              <!-- Thanks https://codepen.io/designer_guru/pen/JhyeH-->
-              <img width="60" height="60" alt="" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png" />
-            </div>
+                    <!-- <ul id= -->
+                </div>
+
+                <div class="radio-toolbar">
+
+            <input type="radio" id="radio1" name="radios" value="all" checked>
+            <label for="radio1">All</label>
+
+            <input type="radio" id="radio2" name="radios"value="false">
+            <label for="radio2">Open</label>
+
+            <input type="radio" id="radio3" name="radios" value="true">
+            <label for="radio3">Archived</label>
+
         </div>
 
-        <!-- <div class = "section">
 
-          <iframe src="https://www.madewithcode.com/projects/emoji" width="90%" height="600" align = "center"></iframe>
-Try it Yourself »
-
-
-        </div> -->
-
-        <div class="section">
-
-            <div class="container-fluid school">
-                <div class="title">
-                    <h2 id="prompt1" class="text-center">I am a...</h2>
-                </div>
-                <div id="eduLevel" class="row">
-                    <div id="middleSchool" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox">
-                        <label>
-                            <input id="chooseMS" type="radio">Middle School Student</label>
-                    </div>
-                    <div id="highSchool" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox">
-                        <label>
-                            <input id="chooseHS" type="radio">High School Student</label>
-                    </div>
-                    <div id="college" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox">
-                        <label>
-                            <input id="chooseCollege" type="radio">College Student</label>
-                    </div>
-                </div>
+            <div class="arrow hvr-sink">
+              <!-- <a href = #school> -->
+                <i class="fa fa-angle-down fa-3x"></i>
+              <!-- </a> -->
             </div>
 
         </div>
 
-        <div class="section">
+        <div class="section" id = "school">
+                <div class="container-fluid school">
+                    <div class="title">
+                        <h2 id="prompt1" class="text-center">I am a...</h2>
+                    </div>
+                    <div class = "radio-toolbar">
+                        <div id="eduLevel" class="row">
+                            <div id="middleSchool" class="col-xs-12 col-s-12 col-md-12 col-lg-12 text-center radio hvr-radial-out">
+                                    <input id="chooseMS" name="radios" type="radio"><label for="chooseMS">Middle School Student
+                                    </label>
+                            </div>
+                            <div id="highSchool" class="col-xs-12 col-s-12 col-md-12 col-lg-12 text-center radio hvr-radial-out">
+                                    <input id="chooseHS" name="radios" type="radio"><label for="chooseHS">High School Student
+                                    </label>
+                            </div>
+                            <div id="college" class="col-xs-12 col-s-12 col-md-12 col-lg-12 text-center radio hvr-radial-out">
+                                <label>
+                                    <input id="chooseCollege" name="radios" type="radio">College Student
+                                </label>
+                            </div>
+                        </div>
 
-          <div class = "container-fluid likes">
+                    </div>
 
-            <div class="title">
-                <h3 id="prompt2" class="text-center">I like...</h2>
+                    <div class="arrow hvr-sink">
+                      <!-- <a href = #school> -->
+                        <i class="fa fa-angle-down fa-3x"></i>
+                      <!-- </a> -->
+                    </div>
+
+                </div>
+
+        </div>
+
+        <div class="section" id = "likes">
+                <div class="container-fluid likes">
+
+                    <div class="title">
+                        <h3 id="prompt2" class="text-center">I like...</h2>
             </div>
 
             <div id="selectInterest" class="row">
-                <div id="art" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox">
+                <div id="art" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox hvr-radial-in">
                     <label>
-                        <input id="chooseArt" type="checkbox"><i class="fa fa-paint-brush fa-5x"></i> Art</label>
+                        <input id="chooseArt" type="checkbox" value = "chooseArt"><i class="fa fa-paint-brush fa-5x"></i> Art</label>
                 </div>
-                <div id="science" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox">
+                <div id="science" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox hvr-radial-in">
                     <label>
-                        <input type="checkbox"><i class="fa fa-flask fa-5x"></i>Science</label>
+                        <input id="chooseScience" type="checkbox"><i class="fa fa-flask fa-5x"></i>Science</label>
                 </div>
-                <div id="music" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox">
+                <div id="music" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox hvr-radial-in">
                     <label>
-                        <input type="checkbox"><i class="fa fa-music fa-5x"></i>Music</label>
+                        <input id = "chooseMusic" type="checkbox"><i class="fa fa-music fa-5x"></i>Music</label>
                 </div>
             </div>
             <div class="row">
-                <div id="math" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox">
+                <div id="math" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox hvr-radial-in">
                     <label>
-                        <input type="checkbox"><i class="fa fa-calculator fa-5x"></i>Math</label>
+                        <input id = "chooseMath" type="checkbox"><i class="fa fa-calculator fa-5x"></i>Math</label>
                 </div>
-                <div id="sports" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox">
+                <div id="sports" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox hvr-radial-in">
                     <label>
                         <input id="chooseSports" type="checkbox"><i class="fa fa-futbol-o fa-5x"></i>Sports</label>
                 </div>
-                <div id="games" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox">
+                <div id="games" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox hvr-radial-in">
                     <label>
-                        <input type="checkbox"><i class="fa fa-gamepad fa-5x"></i>Games</label>
+                        <input id ="chooseGames" type="checkbox"><i class="fa fa-gamepad fa-5x"></i>Games</label>
                 </div>
             </div>
             <div class="row">
-                <div id="fashion" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox">
+                <div id="fashion" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox hvr-radial-in">
                     <label>
                         <input type="checkbox"><i class="fa fa-shopping-bag fa-5x"></i>Fashion</label>
                 </div>
-                <div id="travel" class="col-xs-4 col-s-4 col-md-4 col-lg-4text-center checkbox">
+                <div id="travel" class="col-xs-4 col-s-4 col-md-4 col-lg-4text-center checkbox hvr-radial-in">
                     <label>
                         <input id="chooseTravel" type="checkbox"><i class="fa fa-suitcase fa-5x"></i>Travel</label>
                 </div>
-                <div id="food" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox">
+                <div id="food" class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center checkbox hvr-radial-in">
                     <label>
                         <input type="checkbox"><i class="fa fa-cutlery fa-5x"></i>Food</label>
                 </div>
             </div>
 
+            <div class="arrow hvr-sink">
+              <!-- <a href = #school> -->
+                <i class="fa fa-angle-down fa-3x"></i>
+              <!-- </a> -->
+            </div>
           </div>
 
         </div>
 
-        <div class = "section">
-
+        <div class = "section" id = "desires">
           <div class = "container-fluid desires">
 
            <div class="row">
@@ -153,17 +179,19 @@ Try it Yourself »
           </div>
 
           <div class="row">
-              <div class="col-md-3 text-center checkbox"><label><input type="radio">Learn about starting a company</label></div>
-              <div class="col-md-3 text-center checkbox"><label><input type="radio">Learn about coding</label></div>
-              <div class="col-md-3 text-center checkbox"><label><input type="radio">Learn about computers</label></div>
-              <div class="col-md-3 text-center checkbox"><label><input type="radio">Learn about engineering</label></div>
+              <div class="col-xs-12 col-s-12 col-md-12 col-lg-12 text-center radio hvr-rectangle-in"><label><input type="radio" name = "optradio">Learn about starting a company</label></div>
+              <div class="col-xs-12 col-s-12 col-md-12 col-lg-12 text-center radio"><label><input type="radio" name = "optradio">Learn about coding</label></div>
           </div>
 
-        </div>
+          <div class="arrow">
+              <!-- Thanks https://codepen.io/designer_guru/pen/JhyeH-->
+              <i class="fa fa-angle-down fa-3x"></i>
+          </div>
+
+          </div>
         </div>
 
-        <div class = "section">
-
+        <div class = "section" id = learning-style>
           <div class = "container-fluid learning-style">
 
            <div class="row">
@@ -171,38 +199,56 @@ Try it Yourself »
           </div>
 
           <div class="row">
-              <div class="col-md-4 text-center checkbox"><label><input type="checkbox"><i class="fa fa-camera-retro fa-5x"></i> Through Videos</label></div>
-              <div class="col-md-4 text-center checkbox"><label><input type="checkbox"><i class="fa fa-cutlery"></i>Through Games</label></div>
-              <div class="col-md-4 text-center checkbox"><label><input type="checkbox"><i class="fa fa-cutlery"></i>Through Reading</label></div>
+              <div class="col-xs-6 col-s-6 col-md-6 col-lg-6 text-center checkbox hvr-rectangle-out"><label><input type="checkbox"><i class="fa fa-camera-retro fa-5x"></i> Through Videos</label></div>
+              <div class="col-xs-6 col-s-6 col-md-6 col-lg-6 text-center checkbox hvr-rectangle-out"><label><input type="checkbox"><i class="fa fa-gamepad fa-5x"></i>Through Games</label></div>
           </div>
 
           <div class="row">
-              <div class="col-md-4 text-center checkbox"><label><input type="checkbox"><i class="fa fa-venus-double"></i>With friends</label></div>
-              <div class="col-md-4 text-center checkbox"><label><input type="checkbox">In a Classroom</label></div>
-              <div class="col-md-4 text-center checkbox"><label><input type="checkbox"><i class="fa fa-file-audio-o"></i>Through Podcasts</label></div>
+            <div class="col-xs-6 col-s-6 col-md-6 col-lg-6 text-center checkbox hvr-rectangle-out"><label><input type="checkbox"><i class="fa fa-book fa-5x"></i>Through Reading</label></div>
+            <div class="col-xs-6 col-s-6 col-md-6 col-lg-6 text-center checkbox hvr-rectangle-out"><label><input type="checkbox"><i class="fa fa-venus-double fa-5x"></i>With friends</label></div>
           </div>
-          
+
+
+          <div class="arrow hvr-sink">
+            <!-- <a href = #school> -->
+              <i class="fa fa-angle-down fa-3x"></i>
+            <!-- </a> -->
+          </div>
         </div>
+
 
       </div>
 
-      <div class = "section">
-
+      <div class = "section" id = "results">
         <div class = "container-fluid results" id = "topdf">
 
         <div class="title">
-            <h5 class="text-center">Here are the Grand Results...</h2>
+            <h5 class="text-center">Grand Results...</h2>
         </div>
 
         <div id="finalPrompt" class="row text-center">
           <button type="button" class="btn btn-info"> Show my results!</button>
         </div>
 
-        <div id="grandResults" class="row">
-            
+        <div id = "roleModels" class = "col-xs-4 col-s-4 col-md-4 col-lg-4 text-center text-center row">
+          Role Models
         </div>
 
-        <div class = "col-md-4 text-center"><a href="javascript:demoFromHTML()" class="button" id = "pdfbutton">Download as PDF</a></div>
+
+        <div id = "resources" class = "col-xs-4 col-s-4 col-md-4 col-lg-4 text-center text-center row">
+        Resources
+        </div>
+
+        <div id = "companies" class = "col-xs-4 col-s-4 col-md-4 col-lg-4 text-center text-center row">
+        Companies
+        </div>
+
+
+        <div id="grandResults" class = "col-xs-4 col-s-4 col-md-4 col-lg-4 text-center text-center row">
+
+        </div>
+
+        <!-- <div class = "col-md-4 text-center"><a href="javascript:demoFromHTML()" class="button" id = "pdfbutton">Download as PDF</a></div> -->
 
       </div>
 
