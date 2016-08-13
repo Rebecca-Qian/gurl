@@ -30,7 +30,7 @@
         <div class="section" id = "intro">
                 <h1 id="challengeTitle" class="col-lg-offset-3 col-lg-5 col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-7 col-xs-offset-2 col-xs-7 text-center font-effect-3"><img src = "logonew.png"/></h1>
 
-                <div class="col-lg-offset-3 col-lg-5 col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-7 col-xs-offset-2 col-xs-7 text-center row intro">Welcome! Scroll or press the down arrow key to continue and get your customized resource sheet. Have fun xD
+                <div class="col-lg-offset-3 col-lg-5 col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-7 col-xs-offset-2 col-xs-7 text-center row intro">Welcome! Scroll to get your female tech superstar and beocome one yourself xD.
                 </div>
 
         </div>
@@ -100,7 +100,7 @@
             <div class="row checkbox-toolbar">
                 <div id="fashion" class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center checkbox hvr-rectangle-in">
                   <input type="checkbox" id = "chooseFashion" value = "chooseFashion">
-                  <label for = "chooseFashion"><i class="fa fa-shopping-bag fa-5x"></i>Fashionista</label>
+                  <label for = "chooseFashion"><i class="fa fa-shopping-bag fa-5x"></i>A Fashionista</label>
                 </div>
                 <div id="travel" class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center checkbox hvr-rectangle-in">
                   <input type="checkbox" id = "chooseTravel" value = "chooseTravel">
@@ -146,7 +146,7 @@
           <div class="row checkbox-toolbar2">
               <div class="col-xs-offset-1 col-xs-3 col-sm-offset-2 col-sm-4  col-md-offset-1 col-md-4 col-lg-offset-1 col-lg-4   text-center checkbox hvr-rectangle-out">
                   <input type="checkbox" id = "videos">
-                  <label for = "videos"><i class="fa fa-camera-retro fa-5x"></i> Through Videos</label>
+                  <label for = "videos"><i class="fa fa-video-camera fa-5x"></i> Through Videos</label>
               </div>
               <div class="col-xs-offset-1 col-xs-3 col-sm-offset-2 col-sm-4  col-md-offset-1 col-md-4 col-lg-offset-1 col-lg-4   text-center checkbox hvr-rectangle-out">
                   <input type="checkbox" id = "gaming">
@@ -175,12 +175,8 @@
       <div class = "section" id = "result-button">
         <div class = "container-fluid results" id = "topdf">
 
-        <div class="title">
-            <h5 class="text-center">Grand Results...</h2>
-        </div>
-
         <div id="finalPrompt" class="row text-center">
-          <button type="button" class="btn btn-info row"><a href = "#results"> Show me!</a></button>
+          <a href = "#results" class = "btn btn-info row hvr-buzz-out"> Show my results!</a>
         </div>
       </div>
     </div>
@@ -188,20 +184,30 @@
     <div class = "section" id = "results">
         <div class = "container-fluid results" id = "grandResults">
 
-          <div id = "roleModels" class = "col-lg-offset-1 col-lg-9 col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-7 col-xs-offset-1 col-xs-9 row text-center">
-          <div class = "header">
-            YOU GOT:
-          </div>
+          <!-- <div id = "roleModels" class = "col-lg-offset-1 col-lg-9 col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-7 col-xs-offset-1 col-xs-9 row text-center"> -->
           <div id = "image1" class = "image1 col-lg-offset-1 col-lg-9 col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-7 col-xs-offset-1 col-xs-9 row">
 
+          </div>
+          <div class = "header col-lg-offset-4 col-lg-5 col-md-offset-4 col-md-6 col-sm-offset-3 col-sm-7 col-xs-offset-3 col-xs-7 row"> Your Tech Superstar is...
           </div>
           <div id="grandResults3" class = "description">
             <!-- Lorem ipsum love you! -->
           </div>
           </div>
 
+          <div class="col-lg-offset-3 col-lg-5 col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-7 col-xs-offset-2 col-xs-7 social-media">
+              <table align="center">
+                  <tr>
+                      <th><a href=# class="hvr-buzz-out"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></a>
+                      </th>
+                      <th><a href=# class="hvr-buzz-out"><i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i></a></th>
+                      <th><a href=# class="hvr-buzz-out"><i class="fa fa-envelope-o fa-4x" aria-hidden="true"></i></a></th>
+                  </tr>
+              </table>
+          </div>
 
-          <div id = "resources" class = "col-xs-offset-1 col-xs-3 col-sm-offset-2 col-sm-4  col-md-offset-1 col-md-4 col-lg-offset-1 col-lg-4 text-center">
+
+          <div id = "resources" class = "col-xs-offset-1 col-xs-3 col-sm-offset-2 col-sm-4  col-md-offset-1 col-md-4 col-lg-offset-1 col-lg-4 text-center row">
           <div class = "header">
             Resources
           </div>
@@ -219,6 +225,8 @@
           </div>
           </div>
 
+                  <!-- <div class = "col-md-4 text-center"><a href="javascript:demoFromHTML()" class="button" id = "pdfbutton">Download as PDF</a></div> -->
+
           <!--div id = "companies" class = "col-xs-4 col-sm-4 col-md-4 col-lg-4 row text-center">
           <div class = "col-xs-offset-1 col-xs-3 col-sm-offset-2 col-sm-4  col-md-offset-1 col-md-4 col-lg-offset-1 col-lg-4 header">
             Companies
@@ -232,21 +240,10 @@
           </div>
         </div-->
 
+        <!-- <div id = "backtotop"><a href = "#intro">Back to Top</a></div> -->
+
         </div>
       </div>
-
-        <!-- <div class="col-lg-offset-3 col-lg-5 col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-7 col-xs-offset-2 col-xs-7 social-media text-center">
-            <table align="center">
-                <tr>
-                    <th><a href=# class="hvr-buzz-out"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></a>
-                    </th>
-                    <th><a href=# class="hvr-buzz-out"><i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i></a></th>
-                    <th><a href=# class="hvr-buzz-out"><i class="fa fa-envelope-o fa-4x" aria-hidden="true"></i></a></th>
-                </tr>
-            </table>
-        </div> -->
-
-        <!-- <div class = "col-md-4 text-center"><a href="javascript:demoFromHTML()" class="button" id = "pdfbutton">Download as PDF</a></div> -->
 
       </div>
 

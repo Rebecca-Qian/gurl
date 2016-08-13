@@ -42,7 +42,7 @@ function Resource(name, summary, Url, difficulty, learningStyle) {
 var resources = [ new Resource('Codeacademy', 'Interactive tutorials in Python, JavaScript, HTML/CSS, and more', 'https://www.codecademy.com/', [3, 4], ['Reading']),
 new Resource('Coursera', 'Universities upload lessons', 'https://www.coursera.com', [4], ['Video', 'Reading', 'Friends']),
 new Resource('CodeHS: Karel The Dog', 'Teach a virtual dog how to move and pick up tennis balls while learning the basics of code', 'http://hoc.codehs.com/hoc_editor.html#course=16#module=17#item=1', [2, 3], ['Video', 'Games']),
-new Resource('Mozilla Thimble', 'Remix a "Keep Calm and Carry On" poster', 'https://thimble.mozilla.org', [2, 3], ['Reading', 'Friends']), 
+new Resource('Mozilla Thimble', 'Remix a "Keep Calm and Carry On" poster', 'https://thimble.mozilla.org', [2, 3], ['Reading', 'Friends']),
 new Resource('Code Combat', 'Defeat ogres to learn Python or JavaScript in this epic programming game', 'https://codecombat.com/play', [2, 3, 4], ['Games', 'Friends']),
 new Resource('Made with Code', 'Mix your own music, style a light up dress, customize an emoji, and much more!', 'https://www.madewithcode.com/projects/music', [2], ['Games', 'Friends']),
 new Resource('Make Academy', 'Create a Pokémon-inspired action game and write code in Swift, used for iOS apps', 'https://www.makeschool.com/build-an-iphone-game-in-your-browser', [3, 4], ['Games', 'Reading']),
@@ -180,7 +180,7 @@ function sortInterest (categories) {
 	  	})();
 
 	  	for (var i = 0; i < companyList.length; i++) {
-	 	
+
 	 	document.getElementById("grandResults2").innerHTML += "<a href=" + companyList[i].Url + ">" + companyList[i].name + "</a>: " + companyList[i].summary + "<br />";
 	 }
 	}
@@ -308,34 +308,34 @@ function sortLevel (level) {
 					var photo;
 					(function() {
 						if (roleModels[i].name == "Hilary Mason") {
-						photo = "/photos/HilaryMason.jpg";
+						photo = "photos/HilaryMason.jpg";
 					}
 					if (roleModels[i].name == "Tracy Chou") {
-						photo = "/photos/TracyChou.jpg";
+						photo = "photos/TracyChou.jpg";
 					}
 					if (roleModels[i].name == "Sara Clemens") {
-						photo = "/photos/SaraClemens.jpg";
+						photo = "photos/SaraClemens.jpg";
 					}
 					if (roleModels[i].name == "Payal Kadakia") {
-						photo = "/photos/PayalKadakia.jpg";
+						photo = "photos/PayalKadakia.jpg";
 					}
 					if (roleModels[i].name == "Marcela Sapone") {
-						photo = "/photos/MarcelaSapone.jpg";
+						photo = "photos/MarcelaSapone.jpg";
 					}
 					if (roleModels[i].name == "Ayah Bedir") {
-						photo = "/photos/AyahBdeir.jpg";
+						photo = "photos/AyahBdeir.jpg";
 					}
 					if (roleModels[i].name == "Camille Fournier") {
-						photo = "/photos/CamilleFournier.jpg";
+						photo = "photos/CamilleFournier.jpg";
 					}
 					if (roleModels[i].name == "Tasneem Minadakis") {
-						photo = "/photos/TasneemMinadakis.jpg";
+						photo = "photos/TasneemMinadakis.jpg";
 					}
 					if (roleModels[i].name == "Marissa Mayer") {
-						photo = "/photos/MarissaMayer.jpg";
+						photo = "photos/MarissaMayer.jpg";
 					}
 				})();
-					document.getElementById("grandResults3").innerHTML = "<br />Your Tech Superstar is...<br /> " + roleModels[i].name + "!" + "<br />" + "<img src=" + photo + " />" + "<br />" + roleModels[i].summary + "<br />" + "learn more about " + roleModels[i].name + "'s work <a href=" + roleModels[i].Url + ">" + "here" + "</a>";
+					document.getElementById("grandResults3").innerHTML = roleModels[i].name + "!" + "<br />" + "<img src=" + photo + " />" + "<br />" + roleModels[i].summary + "<br />" + "learn more about " + roleModels[i].name + "'s work <a href=" + roleModels[i].Url + ">" + "here" + "</a>";
 					return;
 				}
 			}
