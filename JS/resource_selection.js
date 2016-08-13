@@ -11,18 +11,24 @@ var interestList = [];
 var categories = [];
 
 // Role model object constructor
-function roleModel(name, summary, area, Url) {
+function roleModel(name, summary, area, Url, image) {
 	this.name = name;
 	this.summary = summary;
 	this.area = area;
 	this.Url = Url;
+	this.image = image;
 }
 
 // full list of role models
-var roleModels = [ new roleModel('Marissa Mayer', 'Marissa is the CEO of Yahoo', 'Science', 'Url'),
-new roleModel('Hilary Mason', 'Hilary is the Chief Engineer at Bit.ly', 'Math', 'Url'),
-new roleModel('Bla', 'Bla is the Chief Technology Officer at Rent the Runway', 'Fashion', 'Url'),
-new roleModel('Bla', 'Bla is the bla at food company', 'Food', 'Url')];
+var roleModels = [ new roleModel('Marissa Mayer', 'CEO, Yahoo & Former VP of Google Maps', 'Math', 'http://www.vogue.com/865211/hail-to-the-chief-yahoos-marissa-mayer/', ''),
+new roleModel('Tracy Chou', 'Former Pinterest Engineer', 'Art', 'https://en.wikipedia.org/wiki/Tracy_Chou', '../photos/TracyChou.jpg'),
+new roleModel('Sarah Clemens', 'Chief Operating Officer, Pandora', 'Music', 'http://investor.pandora.com/phoenix.zhtml?c=227956&p=irol-govBio&ID=235396', ''),
+new roleModel('Hilary Mason', 'Founder, Fast Forward Labs: Former Chief Data Scientist, Bitly', 'Science', 'https://en.wikipedia.org/wiki/Hilary_Mason_(data_scientist)', ''),
+new roleModel('Payal Kadakia', 'CEO, Classpass', 'Sports', 'https://en.wikipedia.org/wiki/ClassPass#Payal_Kadakia'),
+new roleModel('Marcela Sapone', 'Co-Founder & CEO, Hello Alfred', 'Food', 'http://www.businessinsider.com/alfred-founders-explain-why-they-created-a-startup-to-do-your-chores-2015-6', 'pic'),
+new roleModel('Ayah Bedir', 'CEO, Founder, LittleBits', 'Games', 'https://en.wikipedia.org/wiki/Ayah_Bdeir', 'pic'),
+new roleModel('Camille Fournier', 'CTO, Rent the Runway', 'Fashion', 'https://www.linkedin.com/in/camille-fournier-9011812', 'pic'),
+new roleModel('Tasneem Minadakis', 'Head of Rider Growth, Uber', 'Travel', 'http://femgineer.com/2015/01/how-to-transition-from-engineering-to-engineering-management/', 'pic')];
 // Resource object constructor
 function Resource(name, summary, Url, difficulty, learningStyle) {
 	this.name = name;
@@ -61,12 +67,23 @@ function Company(name, Url, category, summary) {
 }
 
 // full list of companies
-var companies = [new Company('Fitbit', 'www.fitbit.com', 'Sports', 'makes tracking devices that record your heartrate, steps taken etc.'),
-new Company('Airbnb', 'www.airbnb.com', 'Travel', 'lets people host guests in their houses and apartments'),
-new Company('Rent the Runway', 'www.renttherunway.com', 'Fashion', 'lets users rent designer dresses for a fraction of the cost'),
-new Company('Spotify', 'www.spotify.com', 'Music', 'hosts a large music library and charges users a small fee every month'),
-new Company('Doordash', 'www.doordash.com', 'Food', 'delivers food to consumers from a wide range of restaurants'),
-new Company('Pinterest', 'www.pinterest.com', 'Art', 'shows pins ranging from fashion trends to photography')];
+var companies = [new Company('Fitbit', 'https://www.fitbit.com/', 'Sports', 'Develop fitness trackers to help improve health with attached apps!'),
+new Company('Airbnb', 'https://www.airbnb.com/', 'Travel', 'Book homes from local hosts in 191+ countries.'),
+new Company('Rent the Runway', 'https://www.renttherunway.com/', 'Fashion', 'An online marketplace with thousands of designer pieces available for rent.'),
+new Company('Spotify', 'https://www.spotify.com/us/', 'Music', 'A digital streaming music service with over a million songs.'),
+new Company('Doordash', 'https://www.doordash.com/', 'Food', 'Get food delivered from your local restaurants.'),
+new Company('Pinterest', 'http://pinterest.com/', 'Art', 'Catalog your ideas in an artistic way.'),
+new Company('Etsy', 'https://www.etsy.com/', 'Art', 'A marketplace of vintage and handmade goods.'),
+new Company('GoogleX', 'https://www.solveforx.com/', 'Science', 'A research company dedicated to finding radical solutions with breakthrough technology.'),
+new Company('SpaceX', 'http://www.spacex.com/', 'Science', 'Designs, manufactures, and launches advanced rockets and spacecraft.'),
+new Company('Pandora', 'http://www.pandora.com/', 'Music', 'A digital streaming music service with personalized radio.'),
+new Company('Bit.ly', 'https://bitly.com/', 'Math', 'Shortens, brands, and optimizes links to see clear over the Internet.'),
+new Company('Wolfram Alpha', 'https://www.wolframalpha.com/', 'Math', 'A computational knowledge search engine.'),
+new Company('ESPN', 'http://www.espn.com/', 'Sports', 'The leading multinational, multimedia sports entertainment company.'),
+new Company('Nintendo', 'http://www.nintendo.com/', 'Games', 'A developer of new and classic games for all ages.'),
+new Company('Electronic Arts', 'http://www.ea.com/', 'Games', 'A leading publisher of games on Console, PC and Mobile.'),
+new Company('Lyft', 'https://www.lyft.com/', 'Travel', 'A US-only ridesharing app'),
+new Company('Yelp', 'https://www.yelp.com/nyc', 'Food', 'A user review and recommendation portal of local businesses.')];
 
 function checkEqual (category, array) {
 	for (var k = 0; k < array.length; k++) {
@@ -168,14 +185,14 @@ function sortInterest (categories) {
 	 }
 	}
 document.getElementById("finalPrompt").addEventListener("click", sortInterests);
-companyList = [];
-document.getElementById("grandResults2").innerHTML = "";
+//companyList = [];
+//document.getElementById("grandResults2").innerHTML = "";
 })();
 
 // function takes in user selections
 // pushes to arrays of links
 function sortLevel (level) {
-	result = [];
+	//result = [];
 	for (var i = 0; i < resources.length; i++) {
 			for (var j = 0; j < resources[i].level.length; j++) {
 			if (level == 'middleSchool' && resources[i].level[j] == 2) {
@@ -190,8 +207,8 @@ function sortLevel (level) {
 				result.push(resources[i]);
 			}
 		}
-		return result;
 	}
+	return result;
 }
 
 (function getLevel() {
@@ -282,20 +299,20 @@ function sortLevel (level) {
 	filteredResult = [];
 })();
 
-// (function showRoleModel() {
-// 	function sortWomen() {
-// 		document.getElementById("grandResults3").innerHTML = "";
-// 		for (var j = 0; j < interestList.length; j++) {
-// 			for (var i = 0; i < roleModels.length; i++) {
-// 				if (interestList[j] == roleModels[i].area) {
-// 					document.getElementById("grandResults3").innerHTML = "Your Role Model is " + roleModels[i].name;
-// 					return;
-// 				}
-// 			}
-// 		}
-// 	}
-// 	document.getElementByIdById("finalPrompt").addEventListener("click", sortWomen);
-// })();
+(function showRoleModel() {
+	function sortWomen() {
+		document.getElementById("grandResults3").innerHTML = "";
+		for (var j = 0; j < interestList.length; j++) {
+			for (var i = 0; i < roleModels.length; i++) {
+				if (interestList[j] == roleModels[i].area) {
+					document.getElementById("grandResults3").innerHTML = "Your Tech Superstar is...<br /> " + roleModels[i].name + "!" + "<br />" + roleModels[i].summary + "<br />" + "learn more about " + roleModels[i].name + "/'s work <a href=" + roleModels[i].Url + ">" + "here" + "</a>";
+					return;
+				}
+			}
+		}
+	}
+	document.getElementById("finalPrompt").addEventListener("click", sortWomen);
+})();
 
 // function testfn() {
 // 	return interestList.push('Travel');
