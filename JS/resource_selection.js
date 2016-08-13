@@ -158,7 +158,9 @@ function sortInterest (categories) {
 };
 
 (function showInterest() {
+	document.getElementById("grandResults2").innerHTML = "";
 	  function sortInterests() {
+	  	document.getElementById("grandResults2").innerHTML = "";
 
 	  	(function() {
 	  		return sortInterest(interestList);
@@ -170,8 +172,9 @@ function sortInterest (categories) {
 	 }
 	}
 document.getElementById("finalPrompt").addEventListener("click", sortInterests);
-}
-)();
+companyList = [];
+document.getElementById("grandResults2").innerHTML = "";
+})();
 
 // function takes in user selections
 // pushes to arrays of links
@@ -284,10 +287,17 @@ function sortLevel (level) {
 (function showRoleModel() {
 	function sortWomen() {
 		document.getElementById("grandResults3").innerHTML = "";
-
+		for (var j = 0; j < interestList.length; j++) {
+			for (var i = 0; i < roleModels.length; i++) {
+				if (interestList[j] == roleModels[i].area) {
+					document.getElementById("grandResults3").innerHTML = "Your Role Model is " + roleModels[i].name;
+					return;
+				}
+			}
+		}
 	}
 	document.getElementByIdById("finalPrompt").addEventListener("click", sortWomen);
-})
+})();
 
 // function testfn() {
 // 	return interestList.push('Travel');
