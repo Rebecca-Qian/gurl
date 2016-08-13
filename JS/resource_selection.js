@@ -22,7 +22,7 @@ function roleModel(name, summary, area, Url, image) {
 // full list of role models
 var roleModels = [ new roleModel('Marissa Mayer', 'CEO, Yahoo & Former VP of Google Maps', 'Math', 'http://www.vogue.com/865211/hail-to-the-chief-yahoos-marissa-mayer/', ''),
 new roleModel('Tracy Chou', 'Former Pinterest Engineer', 'Art', 'https://en.wikipedia.org/wiki/Tracy_Chou', '../photos/TracyChou.jpg'),
-new roleModel('Sarah Clemens', 'Chief Operating Officer, Pandora', 'Music', 'http://investor.pandora.com/phoenix.zhtml?c=227956&p=irol-govBio&ID=235396', ''),
+new roleModel('Sara Clemens', 'Chief Operating Officer, Pandora', 'Music', 'http://investor.pandora.com/phoenix.zhtml?c=227956&p=irol-govBio&ID=235396', ''),
 new roleModel('Hilary Mason', 'Founder, Fast Forward Labs: Former Chief Data Scientist, Bitly', 'Science', 'https://en.wikipedia.org/wiki/Hilary_Mason_(data_scientist)', ''),
 new roleModel('Payal Kadakia', 'CEO, Classpass', 'Sports', 'https://en.wikipedia.org/wiki/ClassPass#Payal_Kadakia'),
 new roleModel('Marcela Sapone', 'Co-Founder & CEO, Hello Alfred', 'Food', 'http://www.businessinsider.com/alfred-founders-explain-why-they-created-a-startup-to-do-your-chores-2015-6', 'pic'),
@@ -305,7 +305,37 @@ function sortLevel (level) {
 		for (var j = 0; j < interestList.length; j++) {
 			for (var i = 0; i < roleModels.length; i++) {
 				if (interestList[j] == roleModels[i].area) {
-					document.getElementById("grandResults3").innerHTML = "Your Tech Superstar is...<br /> " + roleModels[i].name + "!" + "<br />" + "<img src='HilaryMason.jpg' />" + roleModels[i].summary + "<br />" + "learn more about " + roleModels[i].name + "/'s work <a href=" + roleModels[i].Url + ">" + "here" + "</a>";
+					var photo;
+					(function() {
+						if (roleModels[i].name == "Hilary Mason") {
+						photo = "/photos/HilaryMason.jpg";
+					}
+					if (roleModels[i].name == "Tracy Chou") {
+						photo = "/photos/TracyChou.jpg";
+					}
+					if (roleModels[i].name == "Sara Clemens") {
+						photo = "/photos/SaraClemens.jpg";
+					}
+					if (roleModels[i].name == "Payal Kadakia") {
+						photo = "/photos/PayalKadakia.jpg";
+					}
+					if (roleModels[i].name == "Marcela Sapone") {
+						photo = "/photos/MarcelaSapone.jpg";
+					}
+					if (roleModels[i].name == "Ayah Bedir") {
+						photo = "/photos/AyahBdeir.jpg";
+					}
+					if (roleModels[i].name == "Camille Fournier") {
+						photo = "/photos/CamilleFournier.jpg";
+					}
+					if (roleModels[i].name == "Tasneem Minadakis") {
+						photo = "/photos/TasneemMinadakis.jpg";
+					}
+					if (roleModels[i].name == "Marissa Mayer") {
+						photo = "/photos/MarissaMayer.jpg";
+					}
+				})();
+					document.getElementById("grandResults3").innerHTML = "<br />Your Tech Superstar is...<br /> " + roleModels[i].name + "!" + "<br />" + "<img src=" + photo + " />" + "<br />" + roleModels[i].summary + "<br />" + "learn more about " + roleModels[i].name + "'s work <a href=" + roleModels[i].Url + ">" + "here" + "</a>";
 					return;
 				}
 			}
