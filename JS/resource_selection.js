@@ -10,6 +10,19 @@ var companyList = [];
 var interestList = [];
 var categories = [];
 
+// Role model object constructor
+function roleModel(name, summary, area, Url) {
+	this.name = name;
+	this.summary = summary;
+	this.area = area;
+	this.Url = Url;
+}
+
+// full list of role models
+var roleModels = [ new roleModel('Marissa Mayer', 'Marissa is the CEO of Yahoo', 'Science', 'Url'),
+new roleModel('Hilary Mason', 'Hilary is the Chief Engineer at Bit.ly', 'Math', 'Url'),
+new roleModel('Bla', 'Bla is the Chief Technology Officer at Rent the Runway', 'Fashion', 'Url'),
+new roleModel('Bla', 'Bla is the bla at food company', 'Food', 'Url')];
 // Resource object constructor
 function Resource(name, summary, Url, difficulty, learningStyle) {
 	this.name = name;
@@ -32,7 +45,16 @@ new Resource('Make Magazine', '', 'http://makezine.com/category/technology/?post
 new Resource('Scratch', '', 'https://scratch.mit.edu', 3, ['Video', 'Friends']),
 new Resource('MakeQuest', '', 'http://code.globaloria.com', 3, ['Video', 'Friends']),
 new Resource('Technovation Challenge', 'Become a technology entrepreneur and develop a mobile app prototype', 'http://www.technovationchallenge.org/get-started/', 3, ['Video', 'Friends']),
-new Resource('Khan Academy', 'Create drawings and animations with JavaScript', 'https://www.khanacademy.org/computing/computer-programming/programming', 2, ['Video', 'Games'])];
+new Resource('Khan Academy', 'Create drawings and animations with JavaScript', 'https://www.khanacademy.org/computing/computer-programming/programming', 2, ['Video', 'Games']),
+new Resource('Twine', 'A literal choose-your-own-adventure story builder', 'http://www.auntiepixelante.com/twine/', 2, ['Video', 'Games']),
+new Resource('Gamestar Mechanic', 'Learn game design and how to design your own video games', 'http://gamestarmechanic.com', 2, ['Video', 'Games']),
+new Resource('Girl Develop It', 'Slides on basic web design, programming concepts', 'https://www.girldevelopit.com/materials', 2, ['Video', 'Games']),
+new Resource('Blockly Games', '', 'https://blockly-games.appspot.com/?lang=en', 2, ['Video', 'Games']),
+new Resource('Code Newbie', '', 'http://www.codenewbie.org/podcast', 2, ['Video', 'Games']),
+new Resource('Lady Loves Code', '', 'http://www.ladylovescode.com/category/podcast/', 2, ['Video', 'Games']),
+new Resource('TedTalks Technology', '', 'https://itunes.apple.com/gb/podcast/tedtalks-technology/id470624027?mt=2', 2, ['Video', 'Games']),
+new Resource('Note to Self', '', 'http://www.wnyc.org/shows/notetoself/episodes/2', 2, ['Video', 'Games'])
+];
 
 // Company object constructor
 function Company(name, Url, category, summary) {
@@ -258,6 +280,14 @@ function sortLevel (level) {
 	document.getElementById("finalPrompt").addEventListener("click", sortResults);
 	filteredResult = [];
 })();
+
+(function showRoleModel() {
+	function sortWomen() {
+		document.getElementById("grandResults3").innerHTML = "";
+
+	}
+	document.getElementByIdById("finalPrompt").addEventListener("click", sortWomen);
+})
 
 // function testfn() {
 // 	return interestList.push('Travel');
