@@ -1621,7 +1621,7 @@
     transition-timing-function: ease-out
 }
 .hvr-radial-out:active, .hvr-radial-out:focus, .hvr-radial-out:hover {
-    color: #883677;
+    color: #A020F0;
 }
 
 .hvr-radial-out:active:before, .hvr-radial-out:focus:before, .hvr-radial-out:hover:before {
@@ -1666,7 +1666,7 @@
     transition-timing-function: ease-out
 }
 .hvr-radial-out-2:active, .hvr-radial-out-2:focus, .hvr-radial-out-2:hover {
-    color: #6200B3;
+    color: #FF1CAE;
 }
 
 .hvr-radial-out-2:active:before, .hvr-radial-out-2:focus:before, .hvr-radial-out-2:hover:before {
@@ -1699,7 +1699,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: black;
+    background: white;
     border-radius: 100%;
     -webkit-transform: scale(2);
     transform: scale(2);

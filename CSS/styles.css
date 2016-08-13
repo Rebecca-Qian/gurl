@@ -1,10 +1,12 @@
+/* Navigation Bar */
+
 #fp-nav {
     position: fixed;
     z-index: 100;
     margin-top: -32px;
     top: 50%;
     opacity: 1;
-    -webkit-transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0, 0, 0);
 }
 #fp-nav.right {
     right: 17px;
@@ -12,7 +14,7 @@
 #fp-nav.left {
     left: 17px;
 }
-.fp-slidesNav{
+.fp-slidesNav {
     position: absolute;
     z-index: 4;
     left: 50%;
@@ -24,24 +26,21 @@
 .fp-slidesNav.top {
     top: 17px;
 }
-#fp-nav ul,
-.fp-slidesNav ul {
-  margin: 0;
-  padding: 0;
+#fp-nav ul, .fp-slidesNav ul {
+    margin: 0;
+    padding: 0;
 }
-#fp-nav ul li,
-.fp-slidesNav ul li {
+#fp-nav ul li, .fp-slidesNav ul li {
     display: block;
     width: 14px;
     height: 13px;
     margin: 7px;
-    position:relative;
+    position: relative;
 }
 .fp-slidesNav ul li {
     display: inline-block;
 }
-#fp-nav ul li a,
-.fp-slidesNav ul li a {
+#fp-nav ul li a, .fp-slidesNav ul li a {
     display: block;
     position: relative;
     z-index: 1;
@@ -50,17 +49,13 @@
     cursor: pointer;
     text-decoration: none;
 }
-#fp-nav ul li a.active span,
-.fp-slidesNav ul li a.active span,
-#fp-nav ul li:hover a.active span,
-.fp-slidesNav ul li:hover a.active span{
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
     height: 12px;
     width: 12px;
     margin: -6px 0 0 -6px;
     border-radius: 100%;
- }
-#fp-nav ul li a span,
-.fp-slidesNav ul li a span {
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
     border-radius: 50%;
     position: absolute;
     z-index: 1;
@@ -76,8 +71,7 @@
     -o-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
 }
-#fp-nav ul li:hover a span,
-.fp-slidesNav ul li:hover a span{
+#fp-nav ul li:hover a span, .fp-slidesNav ul li:hover a span {
     width: 10px;
     height: 10px;
     margin: -5px 0px 0px -5px;
@@ -96,8 +90,7 @@
     width: 0;
     cursor: pointer;
 }
-#fp-nav ul li:hover .fp-tooltip,
-#fp-nav.fp-show-active a.active + .fp-tooltip {
+#fp-nav ul li:hover .fp-tooltip, #fp-nav.fp-show-active a.active+ .fp-tooltip {
     -webkit-transition: opacity 0.2s ease-in;
     transition: opacity 0.2s ease-in;
     width: auto;
@@ -110,149 +103,137 @@
     left: 20px;
 }
 
-@font-face {
-  font-family: Affogato;
-  src: Affogato-Black.ttf;
-}
 
 body {
     background-color: #FFFFFF !important;
 }
-/*
-li {
-	display: inline-block;
-	float: none;
-	padding-right: 10px;
-}*/
-
-.menu {
-	display: inline;
-	vertical-align: middle;
-}
 
 h1, h2, h3, h4, h5, h6 {
-	  padding-top: 30px;
+    padding-top: 50px;
     font-family: 'Dancing Script', cursive;
     font-size: 70px;
-    padding-bottom: 45px;
-		color: black;
+    padding-bottom: 50px;
+    color: black;
 }
-
 h1, h5 {
-	color: #B81365 !important;
+    color: white !important;
+    text-shadow: 4px 4px 4px #aaa;
 }
 
+h1 {
+  margin-top: 75px;
+  padding: 0;
+  padding-bottom: 0;
+  font-weight: 600;
+  text-shadow: 0px 2px 3px maroon;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 50px;
+}
 .row {
     font-size: 25px;
     font-family: 'Josefin Sans', sans-serif;
 }
 
-.level, .desires {
-  font-weight: bold !important;
-}
-
-.arrow {
-	text-align: center;
-  padding-top: 20px;
-	padding-left: 50%;
-}
-
-.social-media a:link {
-    color: black;
+/*.social-media a:link {
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
     text-decoration: none;
 }
-
 .social-media a:visited {
-    color: black;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
     text-decoration: none;
 }
-
 .social-media a:hover {
+  background-color: rgba(0, 0, 0, 0.7);
     color: #B81365;
     text-decoration: none;
 }
-
 .social-media a:active {
-    color: black;
+  background-color: black;
+  color: white;
     text-decoration: none;
+}*/
+#intro {
+    background-image: url("https://2.bp.blogspot.com/-yGGIugBckBI/V4cKZZV91xI/AAAAAAAASqE/YWBR0qZlc8oChw8Eob5BKpyN5RV5rJanQCLcB/s1600/skintones_b.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: color-burn;
 }
 
 .intro {
-	padding-bottom: 35px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  margin-bottom: 50px;
 }
+
 
 th {
     padding: 10px;
 }
-
 .radio {
-	margin-bottom: 50px;
-  padding: 15px;
-  /*background-color: black !important;*/
-  height: 100%;
-  width: 30%;
-  border-style: groove;
-  border-color: black;
-  border-width: 5px;
-  color: black;
+    margin-bottom: 50px;
+    padding: 15px;
+    height: 100%;
+    border-style: groove;
+    border-color: black;
+    border-width: 5px;
+}
+
+#level {
+  font-weight: 700 !important;
 }
 
 .checkbox {
-	margin-bottom: 50px;
+    margin-bottom: 50px;
 }
-
 input[type=checkbox] {
-   display: none;
+    display: none;
 }
-
 input[type=radio] {
-   display: none;
+    display: none;
 }
-
 .radio-toolbar input[type="radio"] {
-    display:none;
+    display: none;
 }
 
-.radio-toolbar input[type="radio"]:checked + label {
-    color:#883677;
+.radio-toolbar input[type="radio"]:checked+ label {
+    color: #A020F0;
 }
-
 .radio-toolbar2 input[type="radio"] {
-    display:none;
+    display: none;
 }
-
-.radio-toolbar2 input[type="radio"]:checked + label {
-    color:#6200B3;
+.radio-toolbar2 input[type="radio"]:checked+ label {
+    color: #FF1CAE;
 }
-
-.checkbox-toolbar input[type=checkbox]:checked +label {
-	color: #6534ff;
+.checkbox-toolbar input[type=checkbox]:checked+label {
+    color: #6534ff;
 }
-
-.checkbox-toolbar2 input[type=checkbox]:checked +label {
-	color: #D81E5B;
+.checkbox-toolbar2 input[type=checkbox]:checked+label {
+    color: #D81E5B;
 }
-
 #middleSchool, #highSchool, #college {
-  background-size: 60px 60px;
+    background-size: 60px 60px;
 }
-
 #art, #science, #music, #math, #sports, #games, #fashion, #travel, #food {
     display: block;
     text-align: center;
     font-size: 20px;
 }
 
+.btn {
+  margin-bottom: 25px;
+}
 
 .header {
-  color: yellow;
-  font-size: 50px;
-  padding-bottom: 15px;
 }
 
 .thing {
-  font-family: 'Alegreya Sans SC', sans-serif !important;
-  font-size: 30px;
+    font-family: 'Alegreya Sans SC', sans-serif !important;
+    font-size: 30px;
 }
 
 #pdfbutton {
@@ -262,4 +243,36 @@ input[type=radio] {
     color: black;
     border-style: dotted;
     border-color: yellow;
+}
+
+@media  screen and (max-width:768px) {
+    /* default iPad screens */
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 45px;
+        padding-bottom: 25px;
+    }
+    .row {
+        font-size: 25px;
+    }
+
+    .checkbox {
+      font-size: 15px !important;
+      margin-bottom: 15px;
+    }
+}
+
+@media  screen and (max-width:480px) {
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 25px;
+        padding-bottom: 15px;
+    }
+    .row {
+        font-size: 15px;
+    }
+
+    .checkbox {
+      font-size: 12px !important;
+      margin-bottom: 10px;
+    }
 }
