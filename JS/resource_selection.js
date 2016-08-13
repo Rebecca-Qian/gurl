@@ -55,6 +55,8 @@ new Resource('Khan Academy', 'Create drawings and animations with JavaScript', '
 new Resource('Twine', 'A literal choose-your-own-adventure story builder', 'http://www.auntiepixelante.com/twine/', [2, 3, 4], ['Reading']),
 new Resource('Gamestar Mechanic', 'Learn game design and how to design your own video games', 'http://gamestarmechanic.com', [2, 3], ['Video', 'Games']),
 new Resource('Girl Develop It', 'Slides on basic web design, programming concepts', 'https://www.girldevelopit.com/materials', [3, 4], ['Reading']),
+new Resource('General Assembly', 'Offers courses, bootcamps and talks in areas ranging from data science to marketing', 'https://generalassemb.ly/', [3, 4], ['Friends']),
+new Resource('Girls Who Code', 'Provides a community and immersion programs for girls to learn Computer Science', 'https://girlswhocode.com/', [2, 3], ['Friends']),
 new Resource('Blockly Games', 'Simple games using block programming', 'https://blockly-games.appspot.com/?lang=en', [2], ['Games'])
 ];
 
