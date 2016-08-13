@@ -229,6 +229,8 @@ input[type=radio] {
 }
 
 .header {
+  color: #D81E5B !important;
+  font-size: 35px;
 }
 
 .thing {
@@ -259,6 +261,13 @@ input[type=radio] {
       font-size: 15px !important;
       margin-bottom: 15px;
     }
+
+    .header {
+      color: #D81E5B !important;
+      font-size: 25px;
+    }
+
+
 }
 
 @media  screen and (max-width:480px) {
@@ -274,5 +283,10 @@ input[type=radio] {
     .checkbox {
       font-size: 12px !important;
       margin-bottom: 10px;
+    }
+
+    .header {
+      color: #D81E5B !important;
+      font-size: 20px;
     }
 }
