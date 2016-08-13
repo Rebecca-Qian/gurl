@@ -180,8 +180,8 @@ function sortInterest (categories) {
 	 }
 	}
 document.getElementById("finalPrompt").addEventListener("click", sortInterests);
-companyList = [];
-document.getElementById("grandResults2").innerHTML = "";
+//companyList = [];
+//document.getElementById("grandResults2").innerHTML = "";
 })();
 
 // function takes in user selections
@@ -294,27 +294,27 @@ function sortLevel (level) {
 	filteredResult = [];
 })();
 
-(function showRoleModel() {
-	function sortWomen() {
-		document.getElementById("grandResults3").innerHTML = "";
-		for (var j = 0; j < interestList.length; j++) {
-			for (var i = 0; i < roleModels.length; i++) {
-				if (interestList[j] == roleModels[i].area) {
-					document.getElementById("grandResults3").innerHTML = "Your Role Model is " + roleModels[i].name;
-					return;
-				}
-			}
-		}
-	}
-	document.getElementByIdById("finalPrompt").addEventListener("click", sortWomen);
-})();
+// (function showRoleModel() {
+// 	function sortWomen() {
+// 		document.getElementById("grandResults3").innerHTML = "";
+// 		for (var j = 0; j < interestList.length; j++) {
+// 			for (var i = 0; i < roleModels.length; i++) {
+// 				if (interestList[j] == roleModels[i].area) {
+// 					document.getElementById("grandResults3").innerHTML = "Your Role Model is " + roleModels[i].name;
+// 					return;
+// 				}
+// 			}
+// 		}
+// 	}
+// 	document.getElementById("finalPrompt").addEventListener("click", sortWomen);
+// })();
 
-function testfn() {
-	return interestList.push('Travel');
-}
+// function testfn() {
+// 	return interestList.push('Travel');
+// }
 
-document.getElementById("chooseTravel").addEventListener("click", testfn);
+// document.getElementById("chooseTravel").addEventListener("click", testfn);
 
-function resourceList(age, subject, goal, style){
+// function resourceList(age, subject, goal, style){
 
-}
+// }
