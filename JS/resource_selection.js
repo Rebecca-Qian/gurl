@@ -305,7 +305,7 @@ function sortLevel (level) {
 		for (var j = 0; j < interestList.length; j++) {
 			for (var i = 0; i < roleModels.length; i++) {
 				if (interestList[j] == roleModels[i].area) {
-					document.getElementById("grandResults3").innerHTML = "Your Tech Superstar is...<br /> " + roleModels[i].name + "!" + "<br />" + roleModels[i].summary + "<br />" + "learn more about " + roleModels[i].name + "/'s work <a href=" + roleModels[i].Url + ">" + "here" + "</a>";
+					document.getElementById("grandResults3").innerHTML = "Your Tech Superstar is...<br /> " + roleModels[i].name + "!" + "<br />" + "<img src='HilaryMason.jpg' />" + roleModels[i].summary + "<br />" + "learn more about " + roleModels[i].name + "/'s work <a href=" + roleModels[i].Url + ">" + "here" + "</a>";
 					return;
 				}
 			}
