@@ -33,27 +33,23 @@ function Resource(name, summary, Url, difficulty, learningStyle) {
 }
 
 // full list of resources
-var resources = [ new Resource('Codeacademy', 'teaches you with tutorials', 'https://www.codecademy.com/', 3, ['Reading']),
-new Resource('Coursera', 'Universities upload lessons', 'https://www.coursera.com', 4, ['Video', 'Friends']),
-new Resource('CodeHS: Karel The Dog', 'Teach a virtual dog how to move and pick up tennis balls while learning the basics of code', 'http://hoc.codehs.com/hoc_editor.html#course=16#module=17#item=1', 3, ['Video', 'Games']),
-new Resource('Mozilla Thimble', 'Remix a "Keep Calm and Carry On" poster', 'https://thimble.mozilla.org', 3, ['Reading', 'Friends']), 
-new Resource('Code Combat', 'Defeat ogres to learn Python or JavaScript in this epic programming game', 'https://codecombat.com/play', 4, ['Games', 'Friends']),
-new Resource('Google Made with Code', 'Mix your own music', 'https://www.madewithcode.com/projects/music', 3, ['Games', 'Friends']),
-new Resource('Make Academy', 'Create a Pokémon-inspired action game and write code in Swift, used for iOS apps', 'https://www.makeschool.com/build-an-iphone-game-in-your-browser', 3, ['Video', 'Friends']),
-new Resource('Code.org Studio', '', 'https://studio.code.org', 3, ['Games', 'Friends']),
-new Resource('Make Magazine', '', 'http://makezine.com/category/technology/?post_type=projects', 3, ['Video', 'Friends']),
-new Resource('Scratch', '', 'https://scratch.mit.edu', 3, ['Video', 'Friends']),
-new Resource('MakeQuest', '', 'http://code.globaloria.com', 3, ['Video', 'Friends']),
-new Resource('Technovation Challenge', 'Become a technology entrepreneur and develop a mobile app prototype', 'http://www.technovationchallenge.org/get-started/', 3, ['Video', 'Friends']),
-new Resource('Khan Academy', 'Create drawings and animations with JavaScript', 'https://www.khanacademy.org/computing/computer-programming/programming', 2, ['Video', 'Games']),
-new Resource('Twine', 'A literal choose-your-own-adventure story builder', 'http://www.auntiepixelante.com/twine/', 2, ['Video', 'Games']),
-new Resource('Gamestar Mechanic', 'Learn game design and how to design your own video games', 'http://gamestarmechanic.com', 2, ['Video', 'Games']),
-new Resource('Girl Develop It', 'Slides on basic web design, programming concepts', 'https://www.girldevelopit.com/materials', 2, ['Video', 'Games']),
-new Resource('Blockly Games', '', 'https://blockly-games.appspot.com/?lang=en', 2, ['Video', 'Games']),
-new Resource('Code Newbie', '', 'http://www.codenewbie.org/podcast', 2, ['Video', 'Games']),
-new Resource('Lady Loves Code', '', 'http://www.ladylovescode.com/category/podcast/', 2, ['Video', 'Games']),
-new Resource('TedTalks Technology', '', 'https://itunes.apple.com/gb/podcast/tedtalks-technology/id470624027?mt=2', 2, ['Video', 'Games']),
-new Resource('Note to Self', '', 'http://www.wnyc.org/shows/notetoself/episodes/2', 2, ['Video', 'Games'])
+var resources = [ new Resource('Codeacademy', 'Interactive tutorials in Python, JavaScript, HTML/CSS, and more', 'https://www.codecademy.com/', [3, 4], ['Reading']),
+new Resource('Coursera', 'Universities upload lessons', 'https://www.coursera.com', [4], ['Video', 'Reading', 'Friends']),
+new Resource('CodeHS: Karel The Dog', 'Teach a virtual dog how to move and pick up tennis balls while learning the basics of code', 'http://hoc.codehs.com/hoc_editor.html#course=16#module=17#item=1', [2, 3], ['Video', 'Games']),
+new Resource('Mozilla Thimble', 'Remix a "Keep Calm and Carry On" poster', 'https://thimble.mozilla.org', [2, 3], ['Reading', 'Friends']), 
+new Resource('Code Combat', 'Defeat ogres to learn Python or JavaScript in this epic programming game', 'https://codecombat.com/play', [2, 3, 4], ['Games', 'Friends']),
+new Resource('Made with Code', 'Mix your own music, style a light up dress, customize an emoji, and much more!', 'https://www.madewithcode.com/projects/music', [2], ['Games', 'Friends']),
+new Resource('Make Academy', 'Create a Pokémon-inspired action game and write code in Swift, used for iOS apps', 'https://www.makeschool.com/build-an-iphone-game-in-your-browser', [3, 4], ['Games', 'Reading']),
+new Resource('Code.org Studio', 'Learn to code with Angry Birds, Minecraft, and Disney-inspired games and more', 'https://studio.code.org', [2, 3], ['Games', 'Friends', 'Reading']),
+new Resource('Make Magazine', 'Use Arduino and Raspberry Pi to create a photo booth, control your light switch from your phone or a website, and more!', 'http://makezine.com/category/technology/?post_type=projects', [3, 4], ['Reading']),
+new Resource('Scratch', 'Create stories, games, and animations with programming blocks and share with others around the world', 'https://scratch.mit.edu', [2, 3], ['Games', 'Friends']),
+new Resource('MakeQuest', 'Defeat the evil villain "404" by using JavaScript, remix, and share with your friends', 'http://code.globaloria.com', [2, 3], ['Games', 'Friends']),
+new Resource('Technovation Challenge', 'Become a technology entrepreneur and develop a mobile app prototype', 'http://www.technovationchallenge.org/get-started/', [2, 3], ['Reading', 'Friends']),
+new Resource('Khan Academy', 'Create drawings and animations with JavaScript', 'https://www.khanacademy.org/computing/computer-programming/programming', [2, 3, 4], ['Video', 'Games']),
+new Resource('Twine', 'A literal choose-your-own-adventure story builder', 'http://www.auntiepixelante.com/twine/', [2, 3, 4], ['Reading']),
+new Resource('Gamestar Mechanic', 'Learn game design and how to design your own video games', 'http://gamestarmechanic.com', [2, 3], ['Video', 'Games']),
+new Resource('Girl Develop It', 'Slides on basic web design, programming concepts', 'https://www.girldevelopit.com/materials', [3, 4], ['Reading']),
+new Resource('Blockly Games', 'Simple games using block programming', 'https://blockly-games.appspot.com/?lang=en', [2], ['Games'])
 ];
 
 // Company object constructor
@@ -181,19 +177,21 @@ document.getElementById("grandResults2").innerHTML = "";
 function sortLevel (level) {
 	result = [];
 	for (var i = 0; i < resources.length; i++) {
-		if (level == 'middleSchool' && resources[i].level == 2) {
-			//result = [];
-			result.push(resources[i]);
+			for (var j = 0; j < resources[i].level.length; j++) {
+			if (level == 'middleSchool' && resources[i].level[j] == 2) {
+				//result = [];
+				result.push(resources[i]);
+			}
+			if (level == 'highSchool' && resources[i].level[j] == 3) {
+				result.push(resources[i]);
+			}
+			if (level == 'college' && resources[i].level[j] == 4) {
+				//result = [];
+				result.push(resources[i]);
+			}
 		}
-		if (level == 'highSchool' && resources[i].level == 3) {
-			result.push(resources[i]);
-		}
-		if (level == 'college' && resources[i].level == 4) {
-			//result = [];
-			result.push(resources[i]);
-		}
+		return result;
 	}
-	return result;
 }
 
 (function getLevel() {
@@ -284,20 +282,20 @@ function sortLevel (level) {
 	filteredResult = [];
 })();
 
-(function showRoleModel() {
-	function sortWomen() {
-		document.getElementById("grandResults3").innerHTML = "";
-		for (var j = 0; j < interestList.length; j++) {
-			for (var i = 0; i < roleModels.length; i++) {
-				if (interestList[j] == roleModels[i].area) {
-					document.getElementById("grandResults3").innerHTML = "Your Role Model is " + roleModels[i].name;
-					return;
-				}
-			}
-		}
-	}
-	document.getElementByIdById("finalPrompt").addEventListener("click", sortWomen);
-})();
+// (function showRoleModel() {
+// 	function sortWomen() {
+// 		document.getElementById("grandResults3").innerHTML = "";
+// 		for (var j = 0; j < interestList.length; j++) {
+// 			for (var i = 0; i < roleModels.length; i++) {
+// 				if (interestList[j] == roleModels[i].area) {
+// 					document.getElementById("grandResults3").innerHTML = "Your Role Model is " + roleModels[i].name;
+// 					return;
+// 				}
+// 			}
+// 		}
+// 	}
+// 	document.getElementByIdById("finalPrompt").addEventListener("click", sortWomen);
+// })();
 
 // function testfn() {
 // 	return interestList.push('Travel');
